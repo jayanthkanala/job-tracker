@@ -2,6 +2,8 @@
 
 Daily Cursor Automation finds IT-services roles (≤4 years experience), applies where possible, and updates this tracker.
 
+**Runtime:** each run is hard time-boxed to **5–8 minutes** (apply first, then commit tracker updates and stop).
+
 ## Profile
 
 - **Candidate:** Jayanth Kanala
