@@ -1,0 +1,24 @@
+{
+  "profile": {
+    "name": "Jayanth Kanala",
+    "email": "jkanala0@gmail.com",
+    "resumeUrl": "https://jayanthkanala.github.io",
+    "certifications": ["Microsoft Power BI"],
+    "targetRoles": [
+      "Data Analyst",
+      "BI Analyst",
+      "Power BI Developer",
+      "Full Stack Developer",
+      "IT Services Analyst"
+    ],
+    "maxYearsExperience": 4,
+    "sector": "IT services",
+    "availability": "Remote / Hybrid"
+  },
+  "meta": {
+    "lastRunAt": null,
+    "targetBatchSize": 50,
+    "notes": "Updated by the daily Job Finder automation."
+  },
+  "applications": []
+}
