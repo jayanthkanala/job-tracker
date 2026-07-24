@@ -24,3 +24,12 @@ Append-only human-readable summary of each automation run.
 - **stopped_reason:** time_box (stop apply ~min 7; flush/commit)
 - **Profile used:** jkanala0@gmail.com · resume https://jayanthkanala.github.io · Microsoft Power BI
 
+## 2026-07-24T08:22:37Z — time-boxed cloud apply (cron)
+
+- **Applied:** 0 (none completed; no invented successes)
+- **Blocked this run:** 15 (1 public CAPTCHA + login-wall/stale burns)
+- **Still found:** 31
+- **Public attempt:** Remotive EUROPEAN DYNAMICS Power BI Specialist → Workable form filled + resume PDF uploaded; Cloudflare CAPTCHA blocked submit
+- **Secrets:** LINKEDIN_PASSWORD not available in runtime env (LinkedIn path not used)
+- **stopped_reason:** time_box (stop apply ~min 7; flush/commit)
+- **Profile used:** jkanala0@gmail.com · resume PDF `resume/Jayanth_Kanala_Resume.pdf` / URL https://jayanthkanala.github.io · Microsoft Power BI

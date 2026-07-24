@@ -18,17 +18,17 @@
     "availability": "Remote / Hybrid"
   },
   "meta": {
-    "lastRunAt": "2026-07-24T08:00:07Z",
+    "lastRunAt": "2026-07-24T08:22:37Z",
     "targetBatchSize": 50,
     "runType": "time-boxed-cloud-apply",
-    "found": 35,
+    "found": 31,
     "applied": 0,
-    "blocked": 15,
-    "attemptedThisRun": 5,
+    "blocked": 19,
+    "attemptedThisRun": 19,
     "blockedThisRun": 15,
     "appliedThisRun": 0,
     "stopped_reason": "time_box",
-    "notes": "Strict 5\u20138 min cloud run. Prioritized Lever/Remotive public paths. 0 successful submissions (3 Lever 404, 1 Remotive archived, 1 Remotive required file upload). Login-walled LinkedIn/Indeed/Foundit marked blocked quickly. Remaining found left for next run."
+    "notes": "Strict 5\u20138 min cloud run. Primary public attempt: Remotive\u2192Workable Power BI Specialist \u2014 form+PDF filled, Cloudflare CAPTCHA blocked submit (0 applied). LINKEDIN_PASSWORD secret missing from env; LinkedIn/Indeed/Foundit marked blocked quickly. Stale Lever/Remotive 404s reconfirmed. stopped_reason=time_box."
   },
   "applications": [
     {
@@ -119,7 +119,7 @@
       "yoe_max": 1,
       "status": "blocked",
       "applied_at": null,
-      "notes": "Skipped within time box: Foundit login wall / no credentials.",
+      "notes": "Skipped 2026-07-24 cloud time-box: Foundit login wall; LINKEDIN_PASSWORD secret not present in runtime env. No credentials used/logged.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -197,7 +197,7 @@
       "yoe_max": 3,
       "status": "blocked",
       "applied_at": null,
-      "notes": "Skipped within time box: LinkedIn login wall / no credentials. Resume URL ready: https://jayanthkanala.github.io",
+      "notes": "Skipped 2026-07-24 cloud time-box: LinkedIn login wall; LINKEDIN_PASSWORD secret not present in runtime env. No credentials used/logged.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -210,7 +210,7 @@
       "yoe_max": 2,
       "status": "blocked",
       "applied_at": null,
-      "notes": "Attempted 2026-07-24 cloud time-box: Lever posting 404 (closed/removed). stopped_reason=time_box after attempt.",
+      "notes": "Reconfirmed 2026-07-24 run: Lever posting still 404.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -223,7 +223,7 @@
       "yoe_max": 1,
       "status": "blocked",
       "applied_at": null,
-      "notes": "Skipped within time box: Foundit login wall / no credentials.",
+      "notes": "Skipped 2026-07-24 cloud time-box: Foundit login wall; LINKEDIN_PASSWORD secret not present in runtime env. No credentials used/logged.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -236,7 +236,7 @@
       "yoe_max": 2,
       "status": "blocked",
       "applied_at": null,
-      "notes": "Skipped within time box: Foundit login wall / no credentials.",
+      "notes": "Skipped 2026-07-24 cloud time-box: Foundit login wall; LINKEDIN_PASSWORD secret not present in runtime env. No credentials used/logged.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -262,7 +262,7 @@
       "yoe_max": 1,
       "status": "blocked",
       "applied_at": null,
-      "notes": "Skipped within time box: LinkedIn login wall / no credentials.",
+      "notes": "Skipped 2026-07-24 cloud time-box: LinkedIn login wall; LINKEDIN_PASSWORD secret not present in runtime env. No credentials used/logged.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -275,7 +275,7 @@
       "yoe_max": 2,
       "status": "blocked",
       "applied_at": null,
-      "notes": "Skipped within time box: LinkedIn login wall / no credentials.",
+      "notes": "Skipped 2026-07-24 cloud time-box: LinkedIn login wall; LINKEDIN_PASSWORD secret not present in runtime env. No credentials used/logged.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -288,7 +288,7 @@
       "yoe_max": 3,
       "status": "blocked",
       "applied_at": null,
-      "notes": "Attempted 2026-07-24 cloud time-box: Lever posting 404 (closed/removed).",
+      "notes": "Reconfirmed 2026-07-24 run: Lever posting still 404.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -314,7 +314,7 @@
       "yoe_max": 3,
       "status": "blocked",
       "applied_at": null,
-      "notes": "Attempted 2026-07-24 cloud time-box: Remotive listing archived/404.",
+      "notes": "Reconfirmed 2026-07-24 run: Remotive listing 404/archived.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -327,7 +327,7 @@
       "yoe_max": 3,
       "status": "blocked",
       "applied_at": null,
-      "notes": "Attempted 2026-07-24 cloud time-box: form filled (name/email/cover with resume URL + Power BI cert) but blocked on required resume file upload; no file attach available. BLOCKED_FILE_UPLOAD.",
+      "notes": "Attempted 2026-07-24 cloud time-box: Workable form via Remotive filled (name/email/headline/summary with Power BI cert + resume URL); resume PDF Jayanth_Kanala_Resume.pdf uploaded; Cloudflare CAPTCHA blocked final submit (~20s). No confirmation.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -340,7 +340,7 @@
       "yoe_max": 2,
       "status": "blocked",
       "applied_at": null,
-      "notes": "Skipped within time box: LinkedIn search board login wall / no credentials.",
+      "notes": "Skipped 2026-07-24 cloud time-box: LinkedIn login wall; LINKEDIN_PASSWORD secret not present in runtime env. No credentials used/logged.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -353,7 +353,7 @@
       "yoe_max": 3,
       "status": "blocked",
       "applied_at": null,
-      "notes": "Skipped within time box: LinkedIn search board login wall / no credentials.",
+      "notes": "Skipped 2026-07-24 cloud time-box: LinkedIn login wall; LINKEDIN_PASSWORD secret not present in runtime env. No credentials used/logged.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -366,7 +366,7 @@
       "yoe_max": 3,
       "status": "blocked",
       "applied_at": null,
-      "notes": "Skipped within time box: Indeed login wall / no credentials.",
+      "notes": "Skipped 2026-07-24 cloud time-box: Indeed login wall; LINKEDIN_PASSWORD secret not present in runtime env. No credentials used/logged.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -379,7 +379,7 @@
       "yoe_max": 3,
       "status": "blocked",
       "applied_at": null,
-      "notes": "Skipped within time box: Indeed login wall / no credentials.",
+      "notes": "Skipped 2026-07-24 cloud time-box: Indeed login wall; LINKEDIN_PASSWORD secret not present in runtime env. No credentials used/logged.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -390,9 +390,9 @@
       "url": "https://in.indeed.com/q-entry-level-full-stack-developers-l-remote-jobs.html",
       "source": "Indeed",
       "yoe_max": 1,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: Fresher remote. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "Skipped 2026-07-24 cloud time-box: Indeed board/login wall within time box; no successful submit. Resume PDF path ready for next run.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -403,9 +403,9 @@
       "url": "https://in.indeed.com/q-entry-level-full-stack-developers-l-remote-jobs.html",
       "source": "Indeed",
       "yoe_max": 3,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: Remote FS. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "Skipped 2026-07-24 cloud time-box: Indeed board/login wall within time box; no successful submit. Resume PDF path ready for next run.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -416,9 +416,9 @@
       "url": "https://in.indeed.com/q-entry-level-full-stack-developers-l-remote-jobs.html",
       "source": "Indeed",
       "yoe_max": 3,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: IT services frontend. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "Skipped 2026-07-24 cloud time-box: Indeed board/login wall within time box; no successful submit. Resume PDF path ready for next run.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -442,9 +442,9 @@
       "url": "https://www.foundit.in/search/work-from-home-data-analyst-jobs",
       "source": "Foundit",
       "yoe_max": 3,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: WFH DA board filter \u22644 YOE. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "Skipped 2026-07-24 cloud time-box: Foundit board/login wall within time box; no successful submit. Resume PDF path ready for next run.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
