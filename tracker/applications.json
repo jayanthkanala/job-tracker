@@ -18,13 +18,17 @@
     "availability": "Remote / Hybrid"
   },
   "meta": {
-    "lastRunAt": "2026-07-24T06:48:28Z",
+    "lastRunAt": "2026-07-24T08:00:07Z",
     "targetBatchSize": 50,
-    "runType": "manual-catchup",
-    "found": 50,
+    "runType": "time-boxed-cloud-apply",
+    "found": 35,
     "applied": 0,
-    "blocked": 50,
-    "notes": "Catch-up run after missed 09:00 schedule. Listings curated for \u22644 YOE IT/analytics roles. Applications not submitted from this chat session (login walls). Use Apply URLs or Automations \u2192 Run for cloud attempts."
+    "blocked": 15,
+    "attemptedThisRun": 5,
+    "blockedThisRun": 15,
+    "appliedThisRun": 0,
+    "stopped_reason": "time_box",
+    "notes": "Strict 5\u20138 min cloud run. Prioritized Lever/Remotive public paths. 0 successful submissions (3 Lever 404, 1 Remotive archived, 1 Remotive required file upload). Login-walled LinkedIn/Indeed/Foundit marked blocked quickly. Remaining found left for next run."
   },
   "applications": [
     {
@@ -113,9 +117,9 @@
       "url": "https://www.foundit.in/job/power-bi-developer-sanco-solutions-jaipur-49039633",
       "source": "Foundit",
       "yoe_max": 1,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: IT services SMB. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "Skipped within time box: Foundit login wall / no credentials.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -191,9 +195,9 @@
       "url": "https://www.linkedin.com/jobs/view/junior-data-analyst-mysql-powerbi-1y-contract-remote-at-iubenda-4043195545",
       "source": "LinkedIn",
       "yoe_max": 3,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: Contract remote Power BI. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "Skipped within time box: LinkedIn login wall / no credentials. Resume URL ready: https://jayanthkanala.github.io",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -204,9 +208,9 @@
       "url": "https://jobs.lever.co/jobgether/e6472c09-6813-4444-83ab-28b8cab059cf",
       "source": "Lever",
       "yoe_max": 2,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: Entry-level BI. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "Attempted 2026-07-24 cloud time-box: Lever posting 404 (closed/removed). stopped_reason=time_box after attempt.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -217,9 +221,9 @@
       "url": "https://www.foundit.in/job/power-bi-developers-ntt-data-remote-42875602",
       "source": "Foundit",
       "yoe_max": 1,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: IT services. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "Skipped within time box: Foundit login wall / no credentials.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -230,9 +234,9 @@
       "url": "https://www.foundit.in/job/data-analytics-remote-47419228",
       "source": "Foundit",
       "yoe_max": 2,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: 0-2 YOE analytics. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "Skipped within time box: Foundit login wall / no credentials.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -256,9 +260,9 @@
       "url": "https://www.linkedin.com/jobs/view/entry-level-data-analyst-%E2%80%93-remote-at-sytex-solutions-4252369714",
       "source": "LinkedIn",
       "yoe_max": 1,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: Entry-level remote. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "Skipped within time box: LinkedIn login wall / no credentials.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -269,9 +273,9 @@
       "url": "https://www.linkedin.com/jobs/view/junior-data-analyst-remote-at-remotehunter-4383536648",
       "source": "LinkedIn",
       "yoe_max": 2,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: Entry-level Power BI/SQL. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "Skipped within time box: LinkedIn login wall / no credentials.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -282,9 +286,9 @@
       "url": "https://jobs.lever.co/erg/55e6dfc9-fe22-4dec-80ae-8d4ec6e46b39",
       "source": "Lever",
       "yoe_max": 3,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: Entry/mid remote analytics. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "Attempted 2026-07-24 cloud time-box: Lever posting 404 (closed/removed).",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -295,9 +299,9 @@
       "url": "https://jobs.lever.co/resilientco/05be8ae1-e10b-4e9d-9e1e-266a72cdcc68",
       "source": "Lever",
       "yoe_max": 3,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: Power Platform / BA. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "Attempted 2026-07-24 cloud time-box: Lever posting 404 (closed/removed).",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -308,9 +312,9 @@
       "url": "https://remotive.com/remote/jobs/data/data-analyst-power-bi-developer-4333247",
       "source": "Remotive",
       "yoe_max": 3,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: Power BI specialist. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "Attempted 2026-07-24 cloud time-box: Remotive listing archived/404.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -321,9 +325,9 @@
       "url": "https://remotive.com/remote/jobs/data/data-analyst-power-bi-specialist-4571317",
       "source": "Remotive",
       "yoe_max": 3,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: 2+ YOE Power BI. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "Attempted 2026-07-24 cloud time-box: form filled (name/email/cover with resume URL + Power BI cert) but blocked on required resume file upload; no file attach available. BLOCKED_FILE_UPLOAD.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -334,9 +338,9 @@
       "url": "https://www.linkedin.com/jobs/remote-power-bi-jobs-jobs",
       "source": "LinkedIn",
       "yoe_max": 2,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: Entry-level Power BI search. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "Skipped within time box: LinkedIn search board login wall / no credentials.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -347,9 +351,9 @@
       "url": "https://www.linkedin.com/jobs/remote-power-bi-jobs-jobs",
       "source": "LinkedIn",
       "yoe_max": 3,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: BI analyst remote board. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "Skipped within time box: LinkedIn search board login wall / no credentials.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -360,9 +364,9 @@
       "url": "https://in.indeed.com/q-entry-level-full-stack-developers-l-remote-jobs.html",
       "source": "Indeed",
       "yoe_max": 3,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: Entry-level MERN. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "Skipped within time box: Indeed login wall / no credentials.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -373,9 +377,9 @@
       "url": "https://in.indeed.com/q-entry-level-full-stack-developers-l-remote-jobs.html",
       "source": "Indeed",
       "yoe_max": 3,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: Remote junior FS. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "Skipped within time box: Indeed login wall / no credentials.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {

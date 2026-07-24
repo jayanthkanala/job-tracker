@@ -13,3 +13,14 @@ Append-only human-readable summary of each automation run.
 - **Next:** Click **Run** on the saved Cursor Automation for cloud apply attempts, or apply manually from `tracker/applications.json`.
 
 ---
+
+## 2026-07-24T07:51Z — time-boxed cloud apply (cron)
+
+- **Applied:** 0 (none completed; no invented successes)
+- **Blocked this run:** 15 (5 public-path attempts + 10 login-wall burns)
+- **Still found:** 35
+- **Public attempts:** Lever Jobgether/ERG/Resilient → 404 closed; Remotive InAllMedia → archived; Remotive European Dynamics → form filled but required resume file upload blocked submit
+- **Login walls burned:** LinkedIn (3 jobs + 2 boards), Indeed (2), Foundit (3) — no credentials
+- **stopped_reason:** time_box (stop apply ~min 7; flush/commit)
+- **Profile used:** jkanala0@gmail.com · resume https://jayanthkanala.github.io · Microsoft Power BI
+
