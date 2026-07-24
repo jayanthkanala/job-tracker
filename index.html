@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Job Tracker — Jayanth Kanala</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Sora:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0f1714;
+      --bg-elev: #16201c;
+      --bg-soft: #1c2a24;
+      --ink: #e8f0eb;
+      --muted: #8fa399;
+      --line: #2a3d34;
+      --accent: #3dba8a;
+      --accent-dim: rgba(61, 186, 138, 0.14);
+      --warn: #e0a45a;
+      --danger: #e07878;
+      --info: #6eb6d4;
+      --ok: #3dba8a;
+      --radius: 10px;
+      --font-display: "Fraunces", Georgia, serif;
+      --font-body: "Sora", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body {
+      font-family: var(--font-body);
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #1a3329 0%, transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, #243028 0%, transparent 50%),
+        var(--bg);
+      line-height: 1.45;
+    }
+
+    .wrap {
+      width: min(1180px, calc(100% - 2rem));
+      margin: 0 auto;
+      padding: 2.25rem 0 3.5rem;
+    }
+
+    header {
+      display: grid;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 1.5rem;
+    }
+
+    .brand {
+      font-family: var(--font-display);
+      font-size: clamp(1.85rem, 3.5vw, 2.55rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 0;
+    }
+
+    .brand span { color: var(--accent); }
+
+    .lede {
+      margin: 0;
+      color: var(--muted);
+      max-width: 42rem;
+      font-size: 0.95rem;
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem 1.25rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .meta-row strong { color: var(--ink); font-weight: 500; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .stat {
+      background: var(--bg-elev);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 0.9rem 1rem;
+      cursor: pointer;
+      text-align: left;
+      color: inherit;
+      font: inherit;
+      transition: border-color 0.15s ease, background 0.15s ease;
+    }
+
+    .stat:hover,
+    .stat[aria-pressed="true"] {
+      border-color: var(--accent);
+      background: var(--accent-dim);
+    }
+
+    .stat .n {
+      font-family: var(--font-display);
+      font-size: 1.7rem;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 0.35rem;
+    }
+
+    .stat .l {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+    }
+
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .search {
+      flex: 1 1 220px;
+      background: var(--bg-elev);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--ink);
+      font: inherit;
+      font-size: 0.9rem;
+      padding: 0.7rem 1rem;
+      outline: none;
+    }
+
+    .search:focus { border-color: var(--accent); }
+
+    .count-hint {
+      font-size: 0.8rem;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .table-shell {
+      background: var(--bg-elev);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 760px;
+      font-size: 0.875rem;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 0.85rem 1rem;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+
+    th {
+      position: sticky;
+      top: 0;
+      background: var(--bg-soft);
+      color: var(--muted);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 500;
+      z-index: 1;
+    }
+
+    tr:last-child td { border-bottom: none; }
+    tbody tr:hover td { background: rgba(255, 255, 255, 0.02); }
+
+    .role {
+      font-weight: 500;
+      color: var(--ink);
+    }
+
+    .company { color: var(--muted); font-size: 0.8rem; margin-top: 0.15rem; }
+
+    .pill {
+      display: inline-block;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      font-size: 0.7rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      border: 1px solid transparent;
+    }
+
+    .pill-found { color: var(--info); background: rgba(110, 182, 212, 0.12); border-color: rgba(110, 182, 212, 0.28); }
+    .pill-applied { color: var(--ok); background: rgba(61, 186, 138, 0.12); border-color: rgba(61, 186, 138, 0.28); }
+    .pill-blocked { color: var(--danger); background: rgba(224, 120, 120, 0.12); border-color: rgba(224, 120, 120, 0.28); }
+    .pill-skipped { color: var(--muted); background: rgba(143, 163, 153, 0.12); border-color: rgba(143, 163, 153, 0.28); }
+    .pill-response { color: var(--warn); background: rgba(224, 164, 90, 0.12); border-color: rgba(224, 164, 90, 0.28); }
+    .pill-rejected { color: var(--danger); background: rgba(224, 120, 120, 0.12); border-color: rgba(224, 120, 120, 0.28); }
+    .pill-interview { color: var(--accent); background: var(--accent-dim); border-color: rgba(61, 186, 138, 0.35); }
+
+    .link {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.8rem;
+    }
+
+    .link:hover { text-decoration: underline; }
+
+    .notes {
+      max-width: 280px;
+      color: var(--muted);
+      font-size: 0.75rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .error, .loading {
+      padding: 2rem;
+      text-align: center;
+      color: var(--muted);
+      border: 1px dashed var(--line);
+      border-radius: var(--radius);
+    }
+
+    .error { color: var(--danger); }
+
+    footer {
+      margin-top: 1.5rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    footer a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1 class="brand">Job <span>Tracker</span></h1>
+      <p class="lede" id="lede">Loading applications…</p>
+      <div class="meta-row" id="meta-row" hidden></div>
+    </header>
+
+    <section class="stats" id="stats" aria-label="Status totals"></section>
+
+    <div class="toolbar">
+      <input class="search" id="search" type="search" placeholder="Search title, company, location, source…" autocomplete="off" />
+      <div class="count-hint" id="count-hint"></div>
+    </div>
+
+    <div id="content">
+      <div class="loading">Loading tracker data…</div>
+    </div>
+
+    <footer>
+      Source: <code>tracker/applications.json</code> ·
+      <a href="https://github.com/jayanthkanala/job-tracker">GitHub repo</a> ·
+      Resume: <a href="https://jayanthkanala.github.io">jayanthkanala.github.io</a>
+    </footer>
+  </div>
+
+  <script>
+    const STATUS_ORDER = ["found", "applied", "blocked", "interview", "response", "rejected", "skipped"];
+    let data = null;
+    let activeStatus = "all";
+    let query = "";
+
+    const el = (id) => document.getElementById(id);
+
+    function fmtDate(iso) {
+      if (!iso) return "—";
+      const d = new Date(iso);
+      if (Number.isNaN(d.getTime())) return iso;
+      return d.toLocaleString(undefined, {
+        year: "numeric", month: "short", day: "numeric",
+        hour: "2-digit", minute: "2-digit"
+      });
+    }
+
+    function countByStatus(apps) {
+      const counts = { all: apps.length };
+      for (const s of STATUS_ORDER) counts[s] = 0;
+      for (const a of apps) {
+        const s = (a.status || "found").toLowerCase();
+        counts[s] = (counts[s] || 0) + 1;
+      }
+      return counts;
+    }
+
+    function filteredApps() {
+      const apps = data?.applications || [];
+      return apps.filter((a) => {
+        const status = (a.status || "").toLowerCase();
+        if (activeStatus !== "all" && status !== activeStatus) return false;
+        if (!query) return true;
+        const hay = [a.title, a.company, a.location, a.source, a.status, a.notes]
+          .join(" ")
+          .toLowerCase();
+        return hay.includes(query);
+      });
+    }
+
+    function renderStats(counts) {
+      const keys = ["all", ...STATUS_ORDER.filter((s) => counts[s] > 0 || s === "found" || s === "applied" || s === "blocked")];
+      el("stats").innerHTML = keys.map((key) => {
+        const label = key === "all" ? "Total" : key;
+        const pressed = activeStatus === key ? "true" : "false";
+        return `<button class="stat" type="button" data-status="${key}" aria-pressed="${pressed}">
+          <div class="n">${counts[key] || 0}</div>
+          <div class="l">${label}</div>
+        </button>`;
+      }).join("");
+
+      el("stats").querySelectorAll(".stat").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          activeStatus = btn.dataset.status;
+          render();
+        });
+      });
+    }
+
+    function renderTable(apps) {
+      if (!apps.length) {
+        el("content").innerHTML = `<div class="loading">No applications match this filter.</div>`;
+        return;
+      }
+
+      const rows = apps.map((a) => {
+        const status = (a.status || "found").toLowerCase();
+        return `<tr>
+          <td>
+            <div class="role">${escapeHtml(a.title || "Untitled")}</div>
+            <div class="company">${escapeHtml(a.company || "—")}</div>
+          </td>
+          <td>${escapeHtml(a.location || "—")}</td>
+          <td>≤${a.yoe_max ?? "—"}</td>
+          <td>${escapeHtml(a.source || "—")}</td>
+          <td><span class="pill pill-${status}">${escapeHtml(status)}</span></td>
+          <td>${escapeHtml(fmtDate(a.applied_at))}</td>
+          <td class="notes" title="${escapeAttr(a.notes || "")}">${escapeHtml(a.notes || "—")}</td>
+          <td>${a.url ? `<a class="link" href="${escapeAttr(a.url)}" target="_blank" rel="noopener">Open</a>` : "—"}</td>
+        </tr>`;
+      }).join("");
+
+      el("content").innerHTML = `<div class="table-shell"><table>
+        <thead>
+          <tr>
+            <th>Role</th>
+            <th>Location</th>
+            <th>YOE</th>
+            <th>Source</th>
+            <th>Status</th>
+            <th>Applied</th>
+            <th>Notes</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table></div>`;
+    }
+
+    function escapeHtml(s) {
+      return String(s)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;");
+    }
+
+    function escapeAttr(s) {
+      return escapeHtml(s).replaceAll("'", "&#39;");
+    }
+
+    function render() {
+      if (!data) return;
+      const apps = data.applications || [];
+      const counts = countByStatus(apps);
+      const profile = data.profile || {};
+      const meta = data.meta || {};
+
+      el("lede").textContent = `${profile.name || "Candidate"} · ${profile.sector || "IT"} · ≤${profile.maxYearsExperience ?? 4} YOE · ${(profile.targetRoles || []).slice(0, 3).join(" · ")}`;
+
+      const metaBits = [];
+      if (meta.lastRunAt) metaBits.push(`<span>Last run <strong>${escapeHtml(fmtDate(meta.lastRunAt))}</strong></span>`);
+      if (meta.runType) metaBits.push(`<span>Run type <strong>${escapeHtml(meta.runType)}</strong></span>`);
+      if (meta.stopped_reason) metaBits.push(`<span>Stop <strong>${escapeHtml(meta.stopped_reason)}</strong></span>`);
+      if (profile.certifications?.length) metaBits.push(`<span>Cert <strong>${escapeHtml(profile.certifications.join(", "))}</strong></span>`);
+      el("meta-row").hidden = metaBits.length === 0;
+      el("meta-row").innerHTML = metaBits.join("");
+
+      renderStats(counts);
+      const shown = filteredApps();
+      el("count-hint").textContent = `Showing ${shown.length} of ${apps.length}`;
+      renderTable(shown);
+    }
+
+    el("search").addEventListener("input", (e) => {
+      query = e.target.value.trim().toLowerCase();
+      render();
+    });
+
+    async function boot() {
+      try {
+        const res = await fetch("./tracker/applications.json", { cache: "no-store" });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        data = await res.json();
+        render();
+      } catch (err) {
+        el("lede").textContent = "Could not load tracker data.";
+        el("content").innerHTML = `<div class="error">Failed to load applications.json (${escapeHtml(err.message)}). If you're opening the file locally, serve the repo over HTTP or use the GitHub Pages URL.</div>`;
+      }
+    }
+
+    boot();
+  </script>
+</body>
+</html>

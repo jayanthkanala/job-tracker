@@ -13,6 +13,12 @@ Daily Cursor Automation finds IT-services roles (≤4 years experience), applies
 - **Experience filter:** roles asking for under 4 years (entry / junior / 0–3 YOE)
 - **Contact:** jkanala0@gmail.com
 
+## Dashboard
+
+Live board: **https://jayanthkanala.github.io/job-tracker/**
+
+Reads `tracker/applications.json` (status filters + search). Updates whenever the automation pushes new data.
+
 ## Tracker
 
 See [`tracker/applications.json`](tracker/applications.json) for application status.
