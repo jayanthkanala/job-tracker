@@ -18,17 +18,29 @@
     "availability": "Remote / Hybrid"
   },
   "meta": {
-    "lastRunAt": "2026-07-24T08:00:07Z",
+    "lastRunAt": "2026-07-25T09:13:11Z",
     "targetBatchSize": 50,
     "runType": "time-boxed-cloud-apply",
-    "found": 35,
+    "found": 0,
     "applied": 0,
-    "blocked": 15,
-    "attemptedThisRun": 5,
-    "blockedThisRun": 15,
+    "blocked": 38,
+    "skipped": 13,
+    "attemptedThisRun": 8,
+    "blockedThisRun": 22,
+    "skippedThisRun": 13,
     "appliedThisRun": 0,
     "stopped_reason": "time_box",
-    "notes": "Strict 5\u20138 min cloud run. Prioritized Lever/Remotive public paths. 0 successful submissions (3 Lever 404, 1 Remotive archived, 1 Remotive required file upload). Login-walled LinkedIn/Indeed/Foundit marked blocked quickly. Remaining found left for next run."
+    "notes": "Strict 5\u20138 min cloud run. Applied first to public ATS (JazzHR/Workday/HappiestMinds/Remotive). 0 successful submissions (no invented successes). Hypersonix JazzHR on hold; Happiest Minds closed; Concentrix Workday 404; MiniMed Workday account wall; Remotive CAPTCHA. LINKEDIN_PASSWORD secret missing from env \u2014 LinkedIn/Indeed/Foundit burned as blocked. Mega careers homepages marked skipped. stopped_reason=time_box.",
+    "browserAttempts": [
+      "hypersonix-junior-da:closed_on_hold",
+      "happiestminds-ade-pbi:closed",
+      "concentrix-bi-consultant:404",
+      "minimed-da-remote:workday_account_wall",
+      "caredx-greenhouse:skipped_senior",
+      "remotive-berrydunn-ba-5346664:captcha",
+      "ashby-gradera-ds:skipped_not_junior",
+      "remotive-perf-analytics:page_timeout"
+    ]
   },
   "applications": [
     {
@@ -39,9 +51,9 @@
       "url": "https://www.takeofftalent.com/2026/05/hypersonix-is-hiring-for-fresher-entry.html",
       "source": "TakeoffTalent",
       "yoe_max": 3,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: IT services / analytics. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25 cloud apply: JazzHR posting on hold / closed (410). ATS https://hypersonix.applytojob.com/apply/rMrBwvNSQV/Junior-Data-Analyst",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -52,9 +64,9 @@
       "url": "https://www.takeofftalent.com/2026/07/minimed-is-hiring-for-fresher-entry.html",
       "source": "TakeoffTalent",
       "yoe_max": 3,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: Healthcare IT analytics. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25 cloud apply: Workday account-creation wall; multi-step incomplete within time box. ATS Master Data Analyst_R-801324.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -65,9 +77,9 @@
       "url": "https://www.takeofftalent.com/2026/04/datavinci-is-hiring-for-fresher-entry.html",
       "source": "TakeoffTalent",
       "yoe_max": 1,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: Analytics services. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25: TakeoffTalent page had no live ATS apply link (aggregator stale).",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -78,9 +90,9 @@
       "url": "https://www.takeofftalent.com/2026/03/open-health-is-hiring-for-fresher-entry.html",
       "source": "TakeoffTalent",
       "yoe_max": 3,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: Life sciences IT services. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25: TakeoffTalent page had no live ATS apply link (aggregator stale).",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -91,9 +103,9 @@
       "url": "https://www.takeofftalent.com/2026/07/minimed-is-hiring-for-fresher-entry.html",
       "source": "TakeoffTalent",
       "yoe_max": 3,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: REQ51922. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25: aggregator URL mismatched/stale (points at MiniMed TakeoffTalent); no dedicated ATS found in time box.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -104,9 +116,9 @@
       "url": "https://www.takeofftalent.com/2026/07/minimed-is-hiring-for-fresher-entry.html",
       "source": "TakeoffTalent",
       "yoe_max": 3,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: Job 2026-15078. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25: aggregator URL mismatched/stale (points at MiniMed TakeoffTalent); no dedicated ATS found in time box.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -130,9 +142,9 @@
       "url": "https://yohire.in/job/happiest-minds-associate-data-engineer-bengaluru-off-campus-2026",
       "source": "YoHire",
       "yoe_max": 3,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: Digital transformation IT. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25 cloud apply: job no longer accepting applications.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -143,9 +155,9 @@
       "url": "https://jobzenly.com/concentrix-hiring-bi-consultant-freshers-2026-work-from-home-job-apply-now/",
       "source": "JobZenly",
       "yoe_max": 2,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: IT / CX services. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25 cloud apply: Workday URL 404 (listing closed).",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -156,9 +168,9 @@
       "url": "https://offcampusjobs4u.com/cgi-recruitment-2026-junior-java-full-stack-engineer-hyderabad/",
       "source": "CGI Careers via OffCampus",
       "yoe_max": 3,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: J0526-1699 IT consulting. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25: aggregator 403; no public ATS reached in time box.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -169,9 +181,9 @@
       "url": "https://foundthejob.com/cgi-hiring-2026-for-java-full-stack-software-engineer/",
       "source": "FoundTheJob",
       "yoe_max": 3,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: IT consulting 0-3 YOE. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25: aggregator page had no usable CGI ATS apply link.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -182,9 +194,9 @@
       "url": "https://offcampusjobs4u.com/fedex-recruitment-2026-full-stack-developer-i-hyderabad/",
       "source": "FedEx Careers via OffCampus",
       "yoe_max": 3,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: Associate fresher track. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25: aggregator 403; no public ATS reached in time box.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -197,7 +209,7 @@
       "yoe_max": 3,
       "status": "blocked",
       "applied_at": null,
-      "notes": "Skipped within time box: LinkedIn login wall / no credentials. Resume URL ready: https://jayanthkanala.github.io",
+      "notes": "2026-07-25: LinkedIn apply blocked \u2014 LINKEDIN_PASSWORD cloud secret not present in runtime env; abandoned <30s.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -247,9 +259,9 @@
       "url": "https://meganaukri.in/accenture-analytics-and-modeling-new-associate-2026-entry-level-bi-analytics-role-in-gurugram/",
       "source": "Accenture Careers via Meganaukri",
       "yoe_max": 1,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: BI&A entry-level. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25: Meganaukri aggregator had no live Accenture ATS link.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -262,7 +274,7 @@
       "yoe_max": 1,
       "status": "blocked",
       "applied_at": null,
-      "notes": "Skipped within time box: LinkedIn login wall / no credentials.",
+      "notes": "2026-07-25: LinkedIn apply blocked \u2014 LINKEDIN_PASSWORD cloud secret not present in runtime env; abandoned <30s.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -275,7 +287,7 @@
       "yoe_max": 2,
       "status": "blocked",
       "applied_at": null,
-      "notes": "Skipped within time box: LinkedIn login wall / no credentials.",
+      "notes": "2026-07-25: LinkedIn apply blocked \u2014 LINKEDIN_PASSWORD cloud secret not present in runtime env; abandoned <30s.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -340,7 +352,7 @@
       "yoe_max": 2,
       "status": "blocked",
       "applied_at": null,
-      "notes": "Skipped within time box: LinkedIn search board login wall / no credentials.",
+      "notes": "2026-07-25: LinkedIn apply blocked \u2014 LINKEDIN_PASSWORD cloud secret not present in runtime env; abandoned <30s.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -353,7 +365,7 @@
       "yoe_max": 3,
       "status": "blocked",
       "applied_at": null,
-      "notes": "Skipped within time box: LinkedIn search board login wall / no credentials.",
+      "notes": "2026-07-25: LinkedIn apply blocked \u2014 LINKEDIN_PASSWORD cloud secret not present in runtime env; abandoned <30s.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -390,9 +402,9 @@
       "url": "https://in.indeed.com/q-entry-level-full-stack-developers-l-remote-jobs.html",
       "source": "Indeed",
       "yoe_max": 1,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: Fresher remote. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25: Indeed search board login wall; LINKEDIN_PASSWORD N/A for Indeed \u2014 burned quickly.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -403,9 +415,9 @@
       "url": "https://in.indeed.com/q-entry-level-full-stack-developers-l-remote-jobs.html",
       "source": "Indeed",
       "yoe_max": 3,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: Remote FS. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25: Indeed search board login wall \u2014 burned quickly.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -416,9 +428,9 @@
       "url": "https://in.indeed.com/q-entry-level-full-stack-developers-l-remote-jobs.html",
       "source": "Indeed",
       "yoe_max": 3,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: IT services frontend. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25: Indeed search board login wall \u2014 burned quickly.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -429,9 +441,9 @@
       "url": "https://www.adzuna.in/junior-developer/remote",
       "source": "Adzuna",
       "yoe_max": 3,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: 1-3 YOE remote. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25: Adzuna board not a direct apply target within time box.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -442,9 +454,9 @@
       "url": "https://www.foundit.in/search/work-from-home-data-analyst-jobs",
       "source": "Foundit",
       "yoe_max": 3,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: WFH DA board filter \u22644 YOE. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25: Foundit search board login wall \u2014 burned quickly.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -455,9 +467,9 @@
       "url": "https://www.takeofftalent.com/2026/03/open-health-is-hiring-for-fresher-entry.html",
       "source": "TakeoffTalent",
       "yoe_max": 3,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: R-279889 0-3 YOE. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25: aggregator URL mismatched/stale; no dedicated ATS found in time box.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -468,9 +480,9 @@
       "url": "https://www.takeofftalent.com/2026/05/hypersonix-is-hiring-for-fresher-entry.html",
       "source": "TakeoffTalent",
       "yoe_max": 3,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: R-1184047 0-3 YOE. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25: aggregator URL mismatched/stale (Hypersonix page); no dedicated ATS found.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -481,9 +493,9 @@
       "url": "https://www.takeofftalent.com/2026/05/hypersonix-is-hiring-for-fresher-entry.html",
       "source": "TakeoffTalent",
       "yoe_max": 1,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: Fresher DS analyst. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25: aggregator URL mismatched/stale (Hypersonix page); no dedicated ATS found.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -494,9 +506,9 @@
       "url": "https://www.takeofftalent.com/2026/04/datavinci-is-hiring-for-fresher-entry.html",
       "source": "TakeoffTalent",
       "yoe_max": 3,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: R-801324 0-3 YOE. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25 cloud apply: same MiniMed Workday R-801324 account wall; incomplete within time box.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -507,9 +519,9 @@
       "url": "https://www.accenture.com/in-en/careers/jobsearch?jk=analytics%20associate",
       "source": "Accenture Careers",
       "yoe_max": 1,
-      "status": "found",
+      "status": "skipped",
       "applied_at": null,
-      "notes": "Fit: Search analytics associate. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25: generic careers homepage/search \u2014 not a concrete posting; skipped per speed rules.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -520,9 +532,9 @@
       "url": "https://www.tcs.com/careers",
       "source": "TCS Careers",
       "yoe_max": 2,
-      "status": "found",
+      "status": "skipped",
       "applied_at": null,
-      "notes": "Fit: IT services BI search. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25: generic careers homepage/search \u2014 not a concrete posting; skipped per speed rules.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -533,9 +545,9 @@
       "url": "https://www.infosys.com/careers/",
       "source": "Infosys Careers",
       "yoe_max": 2,
-      "status": "found",
+      "status": "skipped",
       "applied_at": null,
-      "notes": "Fit: IT services analyst search. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25: generic careers homepage/search \u2014 not a concrete posting; skipped per speed rules.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -546,9 +558,9 @@
       "url": "https://careers.wipro.com/",
       "source": "Wipro Careers",
       "yoe_max": 2,
-      "status": "found",
+      "status": "skipped",
       "applied_at": null,
-      "notes": "Fit: IT services BI search. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25: generic careers homepage/search \u2014 not a concrete posting; skipped per speed rules.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -559,9 +571,9 @@
       "url": "https://careers.cognizant.com/global/en",
       "source": "Cognizant Careers",
       "yoe_max": 2,
-      "status": "found",
+      "status": "skipped",
       "applied_at": null,
-      "notes": "Fit: IT services early career. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25: generic careers homepage/search \u2014 not a concrete posting; skipped per speed rules.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -572,9 +584,9 @@
       "url": "https://www.capgemini.com/careers/",
       "source": "Capgemini Careers",
       "yoe_max": 2,
-      "status": "found",
+      "status": "skipped",
       "applied_at": null,
-      "notes": "Fit: IT consulting DA search. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25: generic careers homepage/search \u2014 not a concrete posting; skipped per speed rules.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -585,9 +597,9 @@
       "url": "https://www.ltimindtree.com/careers/",
       "source": "LTIMindtree Careers",
       "yoe_max": 3,
-      "status": "found",
+      "status": "skipped",
       "applied_at": null,
-      "notes": "Fit: IT services. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25: generic careers homepage/search \u2014 not a concrete posting; skipped per speed rules.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -598,9 +610,9 @@
       "url": "https://careers.techmahindra.com/",
       "source": "Tech Mahindra Careers",
       "yoe_max": 2,
-      "status": "found",
+      "status": "skipped",
       "applied_at": null,
-      "notes": "Fit: IT services. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25: generic careers homepage/search \u2014 not a concrete posting; skipped per speed rules.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -611,9 +623,9 @@
       "url": "https://www.hcltech.com/careers",
       "source": "HCLTech Careers",
       "yoe_max": 2,
-      "status": "found",
+      "status": "skipped",
       "applied_at": null,
-      "notes": "Fit: IT services. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25: generic careers homepage/search \u2014 not a concrete posting; skipped per speed rules.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -624,9 +636,9 @@
       "url": "https://apply.deloitte.com/",
       "source": "Deloitte Careers",
       "yoe_max": 2,
-      "status": "found",
+      "status": "skipped",
       "applied_at": null,
-      "notes": "Fit: Consulting IT services. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25: generic careers homepage/search \u2014 not a concrete posting; skipped per speed rules.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -637,9 +649,9 @@
       "url": "https://careers.ey.com/",
       "source": "EY Careers",
       "yoe_max": 2,
-      "status": "found",
+      "status": "skipped",
       "applied_at": null,
-      "notes": "Fit: Consulting analytics. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25: generic careers homepage/search \u2014 not a concrete posting; skipped per speed rules.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -650,9 +662,9 @@
       "url": "https://www.pwc.com/gx/en/careers.html",
       "source": "PwC Careers",
       "yoe_max": 2,
-      "status": "found",
+      "status": "skipped",
       "applied_at": null,
-      "notes": "Fit: Consulting analytics. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25: generic careers homepage/search \u2014 not a concrete posting; skipped per speed rules.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -663,9 +675,9 @@
       "url": "https://jobs.careers.microsoft.com/global/en/search?q=Power%20BI%20Analyst&l=en_us&pg=1&pgSz=20&o=Relevance&flt=true",
       "source": "Microsoft Careers",
       "yoe_max": 3,
-      "status": "found",
+      "status": "skipped",
       "applied_at": null,
-      "notes": "Fit: Power BI analyst search. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25: generic careers homepage/search \u2014 not a concrete posting; skipped per speed rules.",
       "discovered_at": "2026-07-24T06:48:28Z"
     },
     {
@@ -676,10 +688,23 @@
       "url": "https://remotive.com/remote-jobs/data",
       "source": "Remotive",
       "yoe_max": 3,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "Fit: Filter junior/\u22643 YOE Power BI. Auto-apply blocked in chat (no job-board login). Apply via URL using resume https://jayanthkanala.github.io and email jkanala0@gmail.com. Highlight Microsoft Power BI cert.",
+      "notes": "2026-07-25: scanned Remotive data board; BerryDunn BA hit CAPTCHA; CareDx senior skipped; Gradera DS mid/senior skipped; no junior public submit completed.",
       "discovered_at": "2026-07-24T06:48:28Z"
+    },
+    {
+      "id": "remotive-berrydunn-ba-5346664",
+      "title": "Business Analyst",
+      "company": "BerryDunn",
+      "location": "Remote",
+      "url": "https://remotive.com/remote/jobs/data/business-analyst-5346664",
+      "source": "Remotive",
+      "yoe_max": 3,
+      "status": "blocked",
+      "applied_at": null,
+      "notes": "2026-07-25 cloud apply: CAPTCHA after email entry; abandoned ~20-30s. No invented success.",
+      "discovered_at": "2026-07-25T09:13:11Z"
     }
   ]
 }
