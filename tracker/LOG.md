@@ -24,3 +24,15 @@ Append-only human-readable summary of each automation run.
 - **stopped_reason:** time_box (stop apply ~min 7; flush/commit)
 - **Profile used:** jkanala0@gmail.com · resume https://jayanthkanala.github.io · Microsoft Power BI
 
+## 2026-07-27T09:11:00Z — time-boxed cloud apply (cron)
+
+- **Applied:** 0 (none completed; no invented successes)
+- **Blocked/failed this run:** 15 primary attempts (+ remaining queue burned at stop)
+- **Still found:** 0
+- **Totals:** applied=0 blocked=50 found=0
+- **Browser attempts:** Eurodyn Workable — form+PDF+cover letter then Cloudflare CAPTCHA; Concentrix Workday — posting missing; Happiest Minds — closed; DataVinci Internshala — applications closed
+- **HTTP/probes:** Hypersonix JazzHR 410; MiniMed Workday Sign In wall; Lever Jobgether/ERG/Resilient still 404; Remotive InAllMedia 404
+- **Credentials:** LINKEDIN_PASSWORD secret not present in runtime env — LinkedIn Easy Apply skipped
+- **stopped_reason:** time_box
+- **Profile used:** jkanala0@gmail.com · resume PDF resume/Jayanth_Kanala_Resume.pdf · URL https://jayanthkanala.github.io · Microsoft Power BI
+
