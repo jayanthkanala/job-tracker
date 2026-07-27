@@ -24,3 +24,14 @@ Append-only human-readable summary of each automation run.
 - **stopped_reason:** time_box (stop apply ~min 7; flush/commit)
 - **Profile used:** jkanala0@gmail.com · resume https://jayanthkanala.github.io · Microsoft Power BI
 
+## 2026-07-27T09:55Z — time-boxed cloud apply (cron)
+
+- **Applied:** 0 (none completed; no invented successes)
+- **Primary attempts:** 2 — LinkedIn Easy Apply login (reCAPTCHA checkpoint) → blocked; European Dynamics Workable (form + resume PDF + Power BI note) → Cloudflare CAPTCHA on submit → blocked
+- **Queue burns:** Dead/mismatched aggregator URLs (JazzHR 410, Lever/Remotive 404s, TakeoffTalent mismatches), Indeed/Foundit boards, and generic mega-careers homepages marked **blocked**
+- **New found (for next run):** 3 RemoteOK junior/associate DA listings (Numa, Caterpillar, Arabian Private Holdings)
+- **Tracker after run:** see `applications.json` meta (`stopped_reason=time_box`)
+- **Profile used:** jkanala0@gmail.com · resume PDF `resume/Jayanth_Kanala_Resume.pdf` (+ URL https://jayanthkanala.github.io) · Microsoft Power BI
+- **stopped_reason:** time_box (stop apply ~min 7; flush/commit/push)
+- **Secrets:** none written to tracker/LOG/commits
+
