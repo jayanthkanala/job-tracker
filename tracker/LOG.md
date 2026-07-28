@@ -24,3 +24,16 @@ Append-only human-readable summary of each automation run.
 - **stopped_reason:** time_box (stop apply ~min 7; flush/commit)
 - **Profile used:** jkanala0@gmail.com · resume https://jayanthkanala.github.io · Microsoft Power BI
 
+
+---
+
+## 2026-07-28T06:04:32Z — time-boxed cloud apply (cron)
+
+- **Applied:** 0 (none completed; no invented successes)
+- **Blocked this run:** 35 (HTTP probe burns: Workday, TakeoffTalent mismatches, Indeed/Foundit, mega-careers, aggregators)
+- **Still found:** 4 (incl. 4 newly queued: Stripe GH ×2, Oowlish Jobicy, SkyWest RemoteOK)
+- **Public probes:** MiniMed/Concentrix Workday → Sign In; Remotive API sparse; Greenhouse Stripe DA forms reachable but not submitted before stop
+- **Credentials:** LinkedIn password env unset this run; do not log secrets
+- **stopped_reason:** time_box
+- **dataUpdatedAt:** 2026-07-28T06:04:32Z
+- **Profile used:** jkanala0@gmail.com · resume PDF + https://jayanthkanala.github.io · Microsoft Power BI
