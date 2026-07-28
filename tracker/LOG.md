@@ -37,3 +37,17 @@ Append-only human-readable summary of each automation run.
 - **stopped_reason:** time_box
 - **dataUpdatedAt:** 2026-07-28T06:04:32Z
 - **Profile used:** jkanala0@gmail.com · resume PDF + https://jayanthkanala.github.io · Microsoft Power BI
+
+
+---
+
+## 2026-07-28T09:18:03Z — time-boxed cloud apply (cron)
+
+- **Applied:** 0 (none completed; no invented successes)
+- **Blocked this run:** 4 (Stripe Mexico email-verify wall after full form fill; Stripe Canada same flow; Oowlish no ATS; SkyWest no ATS URL)
+- **Still found:** 4 (queued 4 new RemoteOK/Jobicy for next run)
+- **Highlights:** Stripe Greenhouse Mexico — resume uploaded, all questions answered, submit stopped by 8-char email verification (no email API)
+- **Credentials:** LinkedIn password env unset this run; do not log secrets
+- **stopped_reason:** time_box
+- **dataUpdatedAt:** 2026-07-28T09:18:03Z
+- **Profile used:** jkanala0@gmail.com · resume PDF + https://jayanthkanala.github.io · Microsoft Power BI
