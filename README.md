@@ -17,7 +17,9 @@ Daily Cursor Automation finds IT-services roles (≤4 years experience), applies
 
 Live board: **https://jayanthkanala.github.io/job-tracker/**
 
-Reads `tracker/applications.json` (status filters + search). Updates whenever the automation pushes new data.
+Reads `tracker/applications.json` (status filters + search + **Fetched** date). Updates whenever new data is **pushed** to `master` (GitHub Pages rebuilds from the repo — it will not change if the automation does not commit).
+
+Each job includes `fetched_at` (when it was first found). The header shows **Data updated** from the last tracker write.
 
 ## Tracker
 

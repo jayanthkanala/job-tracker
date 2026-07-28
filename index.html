@@ -291,6 +291,19 @@
       });
     }
 
+    function fmtDay(iso) {
+      if (!iso) return "—";
+      const d = new Date(iso);
+      if (Number.isNaN(d.getTime())) return iso;
+      return d.toLocaleDateString(undefined, {
+        year: "numeric", month: "short", day: "numeric"
+      });
+    }
+
+    function fetchedAt(a) {
+      return a.fetched_at || a.discovered_at || null;
+    }
+
     function countByStatus(apps) {
       const counts = { all: apps.length };
       for (const s of STATUS_ORDER) counts[s] = 0;
@@ -303,15 +316,21 @@
 
     function filteredApps() {
       const apps = data?.applications || [];
-      return apps.filter((a) => {
-        const status = (a.status || "").toLowerCase();
-        if (activeStatus !== "all" && status !== activeStatus) return false;
-        if (!query) return true;
-        const hay = [a.title, a.company, a.location, a.source, a.status, a.notes]
-          .join(" ")
-          .toLowerCase();
-        return hay.includes(query);
-      });
+      return apps
+        .filter((a) => {
+          const status = (a.status || "").toLowerCase();
+          if (activeStatus !== "all" && status !== activeStatus) return false;
+          if (!query) return true;
+          const hay = [a.title, a.company, a.location, a.source, a.status, a.notes, fetchedAt(a)]
+            .join(" ")
+            .toLowerCase();
+          return hay.includes(query);
+        })
+        .sort((a, b) => {
+          const ta = Date.parse(fetchedAt(a) || "") || 0;
+          const tb = Date.parse(fetchedAt(b) || "") || 0;
+          return tb - ta;
+        });
     }
 
     function renderStats(counts) {
@@ -341,6 +360,7 @@
 
       const rows = apps.map((a) => {
         const status = (a.status || "found").toLowerCase();
+        const fetched = fetchedAt(a);
         return `<tr>
           <td>
             <div class="role">${escapeHtml(a.title || "Untitled")}</div>
@@ -350,6 +370,7 @@
           <td>≤${a.yoe_max ?? "—"}</td>
           <td>${escapeHtml(a.source || "—")}</td>
           <td><span class="pill pill-${status}">${escapeHtml(status)}</span></td>
+          <td title="${escapeAttr(fmtDate(fetched))}"><strong>${escapeHtml(fmtDay(fetched))}</strong></td>
           <td>${escapeHtml(fmtDate(a.applied_at))}</td>
           <td class="notes" title="${escapeAttr(a.notes || "")}">${escapeHtml(a.notes || "—")}</td>
           <td>${a.url ? `<a class="link" href="${escapeAttr(a.url)}" target="_blank" rel="noopener">Open</a>` : "—"}</td>
@@ -364,6 +385,7 @@
             <th>YOE</th>
             <th>Source</th>
             <th>Status</th>
+            <th>Fetched</th>
             <th>Applied</th>
             <th>Notes</th>
             <th></th>
@@ -395,12 +417,16 @@
       el("lede").textContent = `${profile.name || "Candidate"} · ${profile.sector || "IT"} · ≤${profile.maxYearsExperience ?? 4} YOE · ${(profile.targetRoles || []).slice(0, 3).join(" · ")}`;
 
       const metaBits = [];
-      if (meta.lastRunAt) metaBits.push(`<span>Last run <strong>${escapeHtml(fmtDate(meta.lastRunAt))}</strong></span>`);
+      const dataUpdated = meta.dataUpdatedAt || meta.lastRunAt;
+      if (dataUpdated) metaBits.push(`<span>Data updated <strong>${escapeHtml(fmtDate(dataUpdated))}</strong></span>`);
+      if (meta.lastRunAt && meta.lastRunAt !== dataUpdated) metaBits.push(`<span>Last run <strong>${escapeHtml(fmtDate(meta.lastRunAt))}</strong></span>`);
       if (meta.runType) metaBits.push(`<span>Run type <strong>${escapeHtml(meta.runType)}</strong></span>`);
       if (meta.stopped_reason) metaBits.push(`<span>Stop <strong>${escapeHtml(meta.stopped_reason)}</strong></span>`);
       if (profile.certifications?.length) metaBits.push(`<span>Cert <strong>${escapeHtml(profile.certifications.join(", "))}</strong></span>`);
-      el("meta-row").hidden = metaBits.length === 0;
+      metaBits.push(`<button type="button" class="link" id="refresh-btn" style="background:none;border:none;padding:0;cursor:pointer;font:inherit">Refresh data</button>`);
+      el("meta-row").hidden = false;
       el("meta-row").innerHTML = metaBits.join("");
+      el("refresh-btn")?.addEventListener("click", () => boot(true));
 
       renderStats(counts);
       const shown = filteredApps();
@@ -413,9 +439,10 @@
       render();
     });
 
-    async function boot() {
+    async function boot(manual = false) {
       try {
-        const res = await fetch("./tracker/applications.json", { cache: "no-store" });
+        if (manual) el("count-hint").textContent = "Refreshing…";
+        const res = await fetch(`./tracker/applications.json?t=${Date.now()}`, { cache: "no-store" });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         data = await res.json();
         render();
