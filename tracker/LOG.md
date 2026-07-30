@@ -51,3 +51,17 @@ Append-only human-readable summary of each automation run.
 - **stopped_reason:** time_box
 - **dataUpdatedAt:** 2026-07-28T09:18:03Z
 - **Profile used:** jkanala0@gmail.com · resume PDF + https://jayanthkanala.github.io · Microsoft Power BI
+
+
+---
+
+## 2026-07-30T09:18:52Z — time-boxed cloud apply (cron)
+
+- **Applied:** 0 (none completed; no invented successes)
+- **Blocked this run:** 5 (Cloudbeds Greenhouse email-verify after full fill; Oowlish Lever CAPTCHA at submit; RemoteOK Numa/Owl/Haystack Cloudflare or no public ATS)
+- **Still found:** 1 (queued remoteok-yo-ai-labs-da for next run)
+- **Highlights:** Cloudbeds GH LATAM — resume uploaded + all questions answered; submit stopped by 8-char email verification (no email API). Oowlish Lever — resume parsed/auto-fill then CAPTCHA.
+- **Credentials:** LinkedIn not used this run (ATS-first); do not log secrets
+- **stopped_reason:** time_box
+- **dataUpdatedAt:** 2026-07-30T09:18:52Z
+- **Profile used:** jkanala0@gmail.com · resume PDF + https://jayanthkanala.github.io · Microsoft Power BI
