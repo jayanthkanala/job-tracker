@@ -18,20 +18,20 @@
     "availability": "Remote / Hybrid"
   },
   "meta": {
-    "lastRunAt": "2026-07-28T09:18:14Z",
+    "lastRunAt": "2026-07-30T09:18:52Z",
     "targetBatchSize": 50,
     "runType": "time-boxed-cloud-apply",
-    "found": 4,
+    "found": 1,
     "applied": 0,
-    "blocked": 54,
-    "attemptedThisRun": 4,
-    "blockedThisRun": 4,
+    "blocked": 60,
+    "attemptedThisRun": 5,
+    "blockedThisRun": 5,
     "appliedThisRun": 0,
     "stopped_reason": "time_box",
-    "notes": "2026-07-28T09:18:03Z strict time-box. 0 applied (no invented successes). Stripe Mexico Greenhouse form filled then blocked on email verification; Canada twin burned same reason; Oowlish/SkyWest burned (no public ATS). LinkedIn password env unset \u2014 skipped LinkedIn. stopped_reason=time_box.",
-    "dataUpdatedAt": "2026-07-28T09:18:14Z",
+    "notes": "2026-07-30T09:18:52Z strict time-box. 0 applied (no invented successes). Cloudbeds Greenhouse LATAM filled then email-verify wall; Oowlish Lever filled then CAPTCHA; 3 RemoteOK found burns (Cloudflare /l/ + no ATS). Queued YO AI Labs for next run. stopped_reason=time_box.",
+    "dataUpdatedAt": "2026-07-30T09:18:52Z",
     "dashboardNote": "Each job has fetched_at (when first found). Pages reads this JSON after each push.",
-    "addedThisRun": 4
+    "addedThisRun": 3
   },
   "applications": [
     {
@@ -797,12 +797,12 @@
       "url": "https://remoteOK.com/remote-jobs/remote-junior-data-analyst-numa-1134429",
       "location": "Lisbon / Remote",
       "source": "RemoteOK",
-      "status": "found",
+      "status": "blocked",
       "yoe_max": 3,
       "fetched_at": "2026-07-28T09:18:14Z",
       "discovered_at": "2026-07-28T09:18:14Z",
       "applied_at": "",
-      "notes": "Queued 2026-07-28 discovery (RemoteOK). Junior DA \u2014 extract ATS early next run before browser time."
+      "notes": "2026-07-30T09:18:52Z cloud run: RemoteOK /l/ apply redirect Cloudflare/CAPTCHA; Numa Greenhouse board has no Junior Data Analyst posting (sales/SE roles only). Burned."
     },
     {
       "id": "remoteok-owl-data-quality",
@@ -811,12 +811,12 @@
       "url": "https://remoteOK.com/remote-jobs/remote-data-quality-analyst-owl-co-1135274",
       "location": "Toronto / Remote",
       "source": "RemoteOK",
-      "status": "found",
+      "status": "blocked",
       "yoe_max": 3,
       "fetched_at": "2026-07-28T09:18:14Z",
       "discovered_at": "2026-07-28T09:18:14Z",
       "applied_at": "",
-      "notes": "Queued 2026-07-28 discovery (RemoteOK). Probe ATS next run; prefer public apply over aggregator."
+      "notes": "2026-07-30T09:18:52Z cloud run: RemoteOK /l/ apply redirect Cloudflare/CAPTCHA; owl.co/careers had no public Lever/Greenhouse/Ashby ATS link. Burned."
     },
     {
       "id": "remoteok-haystack-da",
@@ -825,12 +825,12 @@
       "url": "https://remoteOK.com/remote-jobs/remote-data-analyst-haystack-1134078",
       "location": "Remote",
       "source": "RemoteOK",
-      "status": "found",
+      "status": "blocked",
       "yoe_max": 3,
       "fetched_at": "2026-07-28T09:18:14Z",
       "discovered_at": "2026-07-28T09:18:14Z",
       "applied_at": "",
-      "notes": "Queued 2026-07-28 discovery (RemoteOK). Entry-friendly title; extract ATS next run."
+      "notes": "2026-07-30T09:18:52Z cloud run: RemoteOK /l/ apply redirect Cloudflare/CAPTCHA; no public ATS resolved for Haystack Data Analyst. Burned."
     },
     {
       "id": "jobicy-cloudbeds-dsa",
@@ -839,12 +839,54 @@
       "url": "https://jobicy.com/jobs/147600-data-services-analyst",
       "location": "LATAM / Remote",
       "source": "Jobicy",
-      "status": "found",
+      "status": "blocked",
       "yoe_max": 3,
       "fetched_at": "2026-07-28T09:18:14Z",
       "discovered_at": "2026-07-28T09:18:14Z",
       "applied_at": "",
-      "notes": "Queued 2026-07-28 discovery (Jobicy API). Extract real ATS before apply; skip if senior-only."
+      "notes": "2026-07-30T09:18:52Z cloud run: resolved Jobicy \u2192 Greenhouse https://job-boards.greenhouse.io/cloudbeds/jobs/4701529005 (LATAM). Form filled + resume uploaded; blocked on 8-char email verification (no email API)."
+    },
+    {
+      "id": "oowlish-da-lever",
+      "title": "Data Analyst (Product & Customer Analytics)",
+      "company": "Oowlish Technology",
+      "location": "Bras\u00edlia, Brazil (Remote)",
+      "url": "https://jobs.lever.co/oowlish/4d812d70-6ae0-4640-b6e9-98c7cc9c4080/apply",
+      "source": "Lever",
+      "yoe_max": 3,
+      "status": "blocked",
+      "applied_at": null,
+      "notes": "2026-07-30T09:18:52Z cloud run: Lever form filled + resume uploaded/parsed; blocked on CAPTCHA at submit (~20-30s rule).",
+      "discovered_at": "2026-07-30T09:18:52Z",
+      "fetched_at": "2026-07-30T09:18:52Z"
+    },
+    {
+      "id": "cloudbeds-dsa-latam-gh",
+      "title": "Data Services Analyst",
+      "company": "Cloudbeds",
+      "location": "Latin America (Remote)",
+      "url": "https://job-boards.greenhouse.io/cloudbeds/jobs/4701529005",
+      "source": "Greenhouse",
+      "yoe_max": 3,
+      "status": "blocked",
+      "applied_at": null,
+      "notes": "2026-07-30T09:18:52Z cloud run: Greenhouse public form completed (resume uploaded, all required Qs); blocked on email verification code. Same wall as Stripe GH.",
+      "discovered_at": "2026-07-30T09:18:52Z",
+      "fetched_at": "2026-07-30T09:18:52Z"
+    },
+    {
+      "id": "remoteok-yo-ai-labs-da",
+      "title": "Data Analyst",
+      "company": "YO AI Labs",
+      "location": "San Francisco (Remote)",
+      "url": "https://remoteOK.com/remote-jobs/remote-data-analyst-yo-ai-labs-1135558",
+      "source": "RemoteOK",
+      "yoe_max": 3,
+      "status": "found",
+      "applied_at": null,
+      "notes": "2026-07-30T09:18:52Z queued for next run; RemoteOK apply often Cloudflare \u2014 extract real ATS before browser time.",
+      "discovered_at": "2026-07-30T09:18:52Z",
+      "fetched_at": "2026-07-30T09:18:52Z"
     }
   ]
 }
