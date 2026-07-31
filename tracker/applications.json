@@ -18,20 +18,20 @@
     "availability": "Remote / Hybrid"
   },
   "meta": {
-    "lastRunAt": "2026-07-30T09:18:52Z",
+    "lastRunAt": "2026-07-31T09:14:00Z",
     "targetBatchSize": 50,
     "runType": "time-boxed-cloud-apply",
-    "found": 1,
+    "found": 3,
     "applied": 0,
-    "blocked": 60,
-    "attemptedThisRun": 5,
-    "blockedThisRun": 5,
+    "blocked": 63,
+    "attemptedThisRun": 3,
+    "blockedThisRun": 3,
     "appliedThisRun": 0,
     "stopped_reason": "time_box",
-    "notes": "2026-07-30T09:18:52Z strict time-box. 0 applied (no invented successes). Cloudbeds Greenhouse LATAM filled then email-verify wall; Oowlish Lever filled then CAPTCHA; 3 RemoteOK found burns (Cloudflare /l/ + no ATS). Queued YO AI Labs for next run. stopped_reason=time_box.",
-    "dataUpdatedAt": "2026-07-30T09:18:52Z",
+    "notes": "2026-07-31T09:14:00Z strict time-box. 0 applied (no invented successes). CI&T Lever DA filled then CAPTCHA; YO AI Labs + HiredBuddy RemoteOK burned (no public ATS). Queued CI&T Full Stack, Adyen GH, Fivetran GH for next run. stopped_reason=time_box.",
+    "dataUpdatedAt": "2026-07-31T09:14:00Z",
     "dashboardNote": "Each job has fetched_at (when first found). Pages reads this JSON after each push.",
-    "addedThisRun": 3
+    "addedThisRun": 5
   },
   "applications": [
     {
@@ -882,11 +882,81 @@
       "url": "https://remoteOK.com/remote-jobs/remote-data-analyst-yo-ai-labs-1135558",
       "source": "RemoteOK",
       "yoe_max": 3,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "2026-07-30T09:18:52Z queued for next run; RemoteOK apply often Cloudflare \u2014 extract real ATS before browser time.",
+      "notes": "2026-07-31T09:14:00Z cloud run: RemoteOK listing only; Ashby/Lever/Greenhouse/Workable board probes 404/empty; no public ATS apply URL. Burned within time box.",
       "discovered_at": "2026-07-30T09:18:52Z",
       "fetched_at": "2026-07-30T09:18:52Z"
+    },
+    {
+      "id": "remoteok-hiredbuddy-junior-da",
+      "title": "Junior Data Analyst",
+      "company": "HiredBuddy",
+      "location": "California, United States (RemoteOK)",
+      "url": "https://remoteOK.com/remote-jobs/remote-junior-data-analyst-hiredbuddy-1135673",
+      "source": "RemoteOK",
+      "yoe_max": 3,
+      "status": "blocked",
+      "applied_at": "",
+      "notes": "2026-07-31T09:14:00Z cloud run: RemoteOK apply URL is listing-only; Lever/GH/Ashby/Workable probes failed or empty. No public ATS. Burned.",
+      "discovered_at": "2026-07-31T09:14:00Z",
+      "fetched_at": "2026-07-31T09:14:00Z"
+    },
+    {
+      "id": "ciandt-da-bi-lever-brazil",
+      "title": "Mid level Data Analyst / Business Intelligence",
+      "company": "CI&T",
+      "location": "Brazil (Homeoffice)",
+      "url": "https://jobs.lever.co/ciandt/2c182fd2-ecb3-43f8-b80f-5d1ea38440c4",
+      "source": "Lever",
+      "yoe_max": 4,
+      "status": "blocked",
+      "applied_at": "",
+      "notes": "2026-07-31T09:14:00Z cloud run: Lever form fully filled + resume uploaded (Power BI cert highlighted); SUBMIT blocked by CAPTCHA (animal silhouette). No invented success.",
+      "discovered_at": "2026-07-31T09:14:00Z",
+      "fetched_at": "2026-07-31T09:14:00Z"
+    },
+    {
+      "id": "ciandt-fullstack-lever-brazil",
+      "title": "Full Stack Developer",
+      "company": "CI&T",
+      "location": "Brazil",
+      "url": "https://jobs.lever.co/ciandt/61f25428-533e-4ff2-9570-0eade9064908",
+      "source": "Lever",
+      "yoe_max": 4,
+      "status": "found",
+      "applied_at": "",
+      "notes": "2026-07-31T09:14:00Z queued for next run; Lever ATS. Expect CAPTCHA at submit in cloud browser.",
+      "fetched_at": "2026-07-31T09:14:00Z",
+      "discovered_at": "2026-07-31T09:14:00Z"
+    },
+    {
+      "id": "adyen-optimization-da-gh",
+      "title": "Optimization Data Analyst",
+      "company": "Adyen",
+      "location": "Singapore",
+      "url": "https://job-boards.greenhouse.io/adyen/jobs/7681249",
+      "source": "Greenhouse",
+      "yoe_max": 4,
+      "status": "found",
+      "applied_at": "",
+      "notes": "2026-07-31T09:14:00Z queued for next run; Greenhouse form reachable. Watch for email-verify wall.",
+      "fetched_at": "2026-07-31T09:14:00Z",
+      "discovered_at": "2026-07-31T09:14:00Z"
+    },
+    {
+      "id": "fivetran-marketing-insights-denver-gh",
+      "title": "Marketing Insights Analyst",
+      "company": "Fivetran",
+      "location": "Denver, Colorado, United States",
+      "url": "https://www.fivetran.com/careers/job?gh_jid=7809734003",
+      "source": "Greenhouse",
+      "yoe_max": 4,
+      "status": "found",
+      "applied_at": "",
+      "notes": "2026-07-31T09:14:00Z queued for next run; Greenhouse with US address fields. May need email verify.",
+      "fetched_at": "2026-07-31T09:14:00Z",
+      "discovered_at": "2026-07-31T09:14:00Z"
     }
   ]
 }

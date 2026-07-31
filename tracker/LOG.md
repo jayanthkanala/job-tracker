@@ -65,3 +65,17 @@ Append-only human-readable summary of each automation run.
 - **stopped_reason:** time_box
 - **dataUpdatedAt:** 2026-07-30T09:18:52Z
 - **Profile used:** jkanala0@gmail.com · resume PDF + https://jayanthkanala.github.io · Microsoft Power BI
+
+---
+
+## 2026-07-31T09:14:00Z — time-boxed cloud apply (cron)
+
+- **Applied:** 0 (none completed; no invented successes)
+- **Blocked this run:** 3 (CI&T Lever CAPTCHA after full fill; YO AI Labs RemoteOK no ATS; HiredBuddy RemoteOK no ATS)
+- **Still found:** 3 (queued CI&T Full Stack Lever, Adyen Greenhouse, Fivetran Greenhouse)
+- **Highlights:** CI&T Lever Mid-level DA/BI Brazil — resume uploaded + Power BI answers filled; submit stopped by CAPTCHA
+- **Credentials:** LinkedIn not used this run (ATS-first); do not log secrets
+- **stopped_reason:** time_box
+- **dataUpdatedAt:** 2026-07-31T09:14:00Z
+- **Profile used:** jkanala0@gmail.com · resume PDF + https://jayanthkanala.github.io · Microsoft Power BI
+
