@@ -79,3 +79,17 @@ Append-only human-readable summary of each automation run.
 - **dataUpdatedAt:** 2026-07-31T09:14:00Z
 - **Profile used:** jkanala0@gmail.com · resume PDF + https://jayanthkanala.github.io · Microsoft Power BI
 
+
+---
+
+## 2026-08-01T09:13:30Z — time-boxed cloud apply (cron)
+
+- **Applied:** 0 (none completed; no invented successes)
+- **Blocked this run:** 3 (Adyen Greenhouse email-verify after full fill; CI&T Lever CAPTCHA at submit; Sparksoft RemoteOK no public ATS)
+- **Still found:** 4 (kept Fivetran GH; queued Oowlish Lever Full Stack x2 + GitLab Greenhouse Fullstack Data Products)
+- **Highlights:** Adyen GH Optimization DA — resume uploaded and questions answered; submit stopped by 8-char email verification (no email API). CI&T Lever Full Stack — resume parsed/auto-fill then CAPTCHA.
+- **Credentials:** LinkedIn not used this run (ATS-first); do not log secrets
+- **stopped_reason:** time_box
+- **dataUpdatedAt:** 2026-08-01T09:13:30Z
+- **Profile used:** jkanala0@gmail.com · resume PDF + https://jayanthkanala.github.io · Microsoft Power BI
+
