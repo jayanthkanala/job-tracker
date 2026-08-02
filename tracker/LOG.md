@@ -93,3 +93,17 @@ Append-only human-readable summary of each automation run.
 - **dataUpdatedAt:** 2026-08-01T09:13:30Z
 - **Profile used:** jkanala0@gmail.com · resume PDF + https://jayanthkanala.github.io · Microsoft Power BI
 
+
+
+---
+
+## 2026-08-02T09:19:17Z — time-boxed cloud apply (cron)
+
+- **Applied:** 1 — Oowlish Technology Full Stack Web Engineer (Python & React) via Lever (`/thanks` confirmation)
+- **Blocked this run:** 2 (GitLab Greenhouse Intermediate Fullstack Data Products — email-verify after full fill + resume; Fivetran Senior Marketing Insights — senior title outside YOE filter, no attempt)
+- **Still found:** 6 (Oowlish AI Lever + new CI&T Junior Data Governance / Analytics Engineer / DBT + GitLab Backend Analytics + Databricks Fullstack Amsterdam)
+- **Highlights:** First confirmed Lever submit this automation streak; CAPTCHA solved on Oowlish. Greenhouse email-verify wall still blocks GitLab without inbox API.
+- **Credentials:** LinkedIn not used this run (ATS-first); do not log secrets
+- **stopped_reason:** time_box
+- **dataUpdatedAt:** 2026-08-02T09:19:17Z
+- **Profile used:** jkanala0@gmail.com · resume PDF + https://jayanthkanala.github.io · Microsoft Power BI
