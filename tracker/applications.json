@@ -18,20 +18,20 @@
     "availability": "Remote / Hybrid"
   },
   "meta": {
-    "lastRunAt": "2026-08-01T09:13:30Z",
+    "lastRunAt": "2026-08-02T09:19:17Z",
     "targetBatchSize": 50,
     "runType": "time-boxed-cloud-apply",
-    "found": 4,
-    "applied": 0,
-    "blocked": 66,
+    "found": 6,
+    "applied": 1,
+    "blocked": 68,
     "attemptedThisRun": 2,
-    "blockedThisRun": 3,
-    "appliedThisRun": 0,
+    "blockedThisRun": 2,
+    "appliedThisRun": 1,
     "stopped_reason": "time_box",
-    "notes": "2026-08-01T09:13:30Z strict time-box. 0 applied (no invented successes). Adyen Greenhouse Optimization DA: filled + resume upload then email-verify wall; CI&T Lever Full Stack Brazil: filled + resume then CAPTCHA; Sparksoft RemoteOK: no public ATS (HTTP burn). Still found: Fivetran GH + new Oowlish Lever FS + GitLab GH. stopped_reason=time_box.",
-    "dataUpdatedAt": "2026-08-01T09:13:30Z",
+    "notes": "2026-08-02T09:19:17Z strict time-box. 1 applied (Oowlish Lever Full Stack Python/React \u2014 thanks page). Blocked: GitLab GH Intermediate Fullstack Data Products email-verify after full fill; Fivetran Senior Marketing Insights burned (senior title / YOE filter). Still found: Oowlish AI Lever + 5 new CI&T/GitLab/Databricks. stopped_reason=time_box.",
+    "dataUpdatedAt": "2026-08-02T09:19:17Z",
     "dashboardNote": "Each job has fetched_at (when first found). Pages reads this JSON after each push.",
-    "addedThisRun": 4
+    "addedThisRun": 5
   },
   "applications": [
     {
@@ -952,9 +952,9 @@
       "url": "https://www.fivetran.com/careers/job?gh_jid=7809734003",
       "source": "Greenhouse",
       "yoe_max": 4,
-      "status": "found",
+      "status": "blocked",
       "applied_at": "",
-      "notes": "2026-08-01T09:13:30Z still queued next run (Greenhouse Senior Marketing Insights Analyst, Denver). Not attempted this run after GH email-verify + Lever CAPTCHA burns; expect US address fields / possible email-verify.",
+      "notes": "2026-08-02T09:19:17Z cloud run: Greenhouse job title confirmed 'Senior Marketing Insights Analyst' (boards-api). Outside under-4-YOE target filter; burned without apply attempt. Prior note: GH email-verify also likely.",
       "fetched_at": "2026-07-31T09:14:00Z",
       "discovered_at": "2026-07-31T09:14:00Z"
     },
@@ -966,9 +966,9 @@
       "url": "https://jobs.lever.co/oowlish/e7ce2491-2ec1-499e-b7f5-931bcb6f19e2",
       "source": "Lever",
       "yoe_max": 3,
-      "status": "found",
-      "applied_at": null,
-      "notes": "2026-08-01T09:13:30Z queued for next run (Lever). Prior Oowlish DA Lever hit CAPTCHA at submit \u2014 expect same.",
+      "status": "applied",
+      "applied_at": "2026-08-02T09:19:17Z",
+      "notes": "2026-08-02T09:19:17Z cloud run: Lever apply SUCCESS \u2014 resume uploaded, form filled (portfolio https://jayanthkanala.github.io, React/Python 3-5y answers, English Advanced). CAPTCHA solved; confirmation 'Application submitted!' at /thanks. Note: LATAM location dropdown required; selected S\u00e3o Paulo while current location Hyderabad IND.",
       "discovered_at": "2026-08-01T09:13:30Z",
       "fetched_at": "2026-08-01T09:13:30Z"
     },
@@ -982,7 +982,7 @@
       "yoe_max": 3,
       "status": "found",
       "applied_at": null,
-      "notes": "2026-08-01T09:13:30Z queued for next run (Lever AI-Driven Full Stack).",
+      "notes": "2026-08-02T09:19:17Z still queued next run (Lever AI-Driven Full Stack). Sibling Oowlish Python/React applied successfully this run \u2014 try this next if time allows; CAPTCHA possible.",
       "discovered_at": "2026-08-01T09:13:30Z",
       "fetched_at": "2026-08-01T09:13:30Z"
     },
@@ -994,9 +994,9 @@
       "url": "https://job-boards.greenhouse.io/gitlab/jobs/8623751002",
       "source": "Greenhouse",
       "yoe_max": 3,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "2026-08-01T09:13:30Z queued for next run (Greenhouse Bangalore). May hit email-verify wall like other GH boards.",
+      "notes": "2026-08-02T09:19:17Z cloud run: Greenhouse form fully filled + resume PDF uploaded (Bangalore/India, Power BI/FS answers). Submit blocked by 8-char email verification to jkanala0@gmail.com (no email API).",
       "discovered_at": "2026-08-01T09:13:30Z",
       "fetched_at": "2026-08-01T09:13:30Z"
     },
@@ -1013,6 +1013,76 @@
       "notes": "2026-08-01T09:13:30Z cloud run: RemoteOK listing-only; HTTP probe found no Greenhouse/Lever/Ashby/Workable apply URL \u2014 burned without browser.",
       "discovered_at": "2026-08-01T09:13:30Z",
       "fetched_at": "2026-08-01T09:13:30Z"
+    },
+    {
+      "id": "ciandt-junior-data-governance-lever",
+      "title": "Junior Data Governance Analyst",
+      "company": "CI&T",
+      "location": "Brazil",
+      "url": "https://jobs.lever.co/ciandt/40b98c49-6705-441e-9feb-7b3cfa20f177",
+      "source": "Lever",
+      "yoe_max": 2,
+      "status": "found",
+      "applied_at": null,
+      "notes": "2026-08-02T09:19:17Z queued from CI&T Lever board (Job-30848 Junior Data Governance Analyst, Brazil).",
+      "discovered_at": "2026-08-02T09:19:17Z",
+      "fetched_at": "2026-08-02T09:19:17Z"
+    },
+    {
+      "id": "ciandt-mid-analytics-engineer-lever",
+      "title": "Mid-Level Analytics Engineer",
+      "company": "CI&T",
+      "location": "Lisboa",
+      "url": "https://jobs.lever.co/ciandt/fa5566d6-1ea7-4cf4-a52c-bf2f3897a436",
+      "source": "Lever",
+      "yoe_max": 4,
+      "status": "found",
+      "applied_at": null,
+      "notes": "2026-08-02T09:19:17Z queued from CI&T Lever board (Job-29870 Mid-Lever Analytics Engineer, Lisboa).",
+      "discovered_at": "2026-08-02T09:19:17Z",
+      "fetched_at": "2026-08-02T09:19:17Z"
+    },
+    {
+      "id": "ciandt-analytics-engineer-dbt-lever",
+      "title": "Analytics Engineer / DBT Modelling Engineer",
+      "company": "CI&T",
+      "location": "Brazil",
+      "url": "https://jobs.lever.co/ciandt/3ccc389e-ea57-4fef-8e31-0ea49ee78c7f",
+      "source": "Lever",
+      "yoe_max": 4,
+      "status": "found",
+      "applied_at": null,
+      "notes": "2026-08-02T09:19:17Z queued from CI&T Lever board (Job-30586 Analytics Engineer / DBT, Brazil).",
+      "discovered_at": "2026-08-02T09:19:17Z",
+      "fetched_at": "2026-08-02T09:19:17Z"
+    },
+    {
+      "id": "gitlab-intermediate-backend-analytics-gh",
+      "title": "Intermediate Backend Engineer - Analytics Instrumentation",
+      "company": "GitLab",
+      "location": "Bangalore, India",
+      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8615389002",
+      "source": "Greenhouse",
+      "yoe_max": 4,
+      "status": "found",
+      "applied_at": null,
+      "notes": "2026-08-02T09:19:17Z queued from GitLab Greenhouse board (Bangalore). Sibling GH fullstack hit email-verify \u2014 expect same wall.",
+      "discovered_at": "2026-08-02T09:19:17Z",
+      "fetched_at": "2026-08-02T09:19:17Z"
+    },
+    {
+      "id": "databricks-fullstack-amsterdam-gh",
+      "title": "Software Engineer - Fullstack",
+      "company": "Databricks",
+      "location": "Amsterdam, Netherlands",
+      "url": "https://job-boards.greenhouse.io/databricks/jobs/8029677002",
+      "source": "Greenhouse",
+      "yoe_max": 4,
+      "status": "found",
+      "applied_at": null,
+      "notes": "2026-08-02T09:19:17Z queued from Databricks Greenhouse (Fullstack, Amsterdam). Expect GH email-verify wall.",
+      "discovered_at": "2026-08-02T09:19:17Z",
+      "fetched_at": "2026-08-02T09:19:17Z"
     }
   ]
 }
