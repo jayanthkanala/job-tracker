@@ -107,3 +107,19 @@ Append-only human-readable summary of each automation run.
 - **stopped_reason:** time_box
 - **dataUpdatedAt:** 2026-08-02T09:19:17Z
 - **Profile used:** jkanala0@gmail.com · resume PDF + https://jayanthkanala.github.io · Microsoft Power BI
+
+---
+
+## 2026-08-03T09:14:22Z — time-boxed cloud apply (cron)
+
+- **Applied:** 0 (none completed; no invented successes)
+- **Blocked this run:** 1 — `oowlish-fullstack-ai-lever` (Lever form filled + resume uploaded; repeated image CAPTCHA at submit)
+- **Still found:** 6 — CI&T Lever ×3, GitLab GH backend analytics, Databricks GH fullstack, Oowlish DA Product/Customer Analytics (new)
+- **Added this run:** 1 — `oowlish-da-product-customer-lever`
+- **Public attempts:** Oowlish Lever AI Full Stack only (sibling of prior applied Python/React)
+- **Skipped this run:** Greenhouse GitLab/Databricks (email-verify wall pattern); remaining CI&T Lever after time stop
+- **Credentials:** LinkedIn not required for Lever attempt; secrets not written to tracker
+- **stopped_reason:** time_box
+- **dataUpdatedAt:** 2026-08-03T09:14:22Z
+- **Profile used:** jkanala0@gmail.com · resume PDF + https://jayanthkanala.github.io · Microsoft Power BI
+

@@ -18,20 +18,20 @@
     "availability": "Remote / Hybrid"
   },
   "meta": {
-    "lastRunAt": "2026-08-02T09:19:17Z",
+    "lastRunAt": "2026-08-03T09:14:22Z",
     "targetBatchSize": 50,
     "runType": "time-boxed-cloud-apply",
     "found": 6,
     "applied": 1,
-    "blocked": 68,
-    "attemptedThisRun": 2,
-    "blockedThisRun": 2,
-    "appliedThisRun": 1,
+    "blocked": 69,
+    "attemptedThisRun": 1,
+    "blockedThisRun": 1,
+    "appliedThisRun": 0,
     "stopped_reason": "time_box",
-    "notes": "2026-08-02T09:19:17Z strict time-box. 1 applied (Oowlish Lever Full Stack Python/React \u2014 thanks page). Blocked: GitLab GH Intermediate Fullstack Data Products email-verify after full fill; Fivetran Senior Marketing Insights burned (senior title / YOE filter). Still found: Oowlish AI Lever + 5 new CI&T/GitLab/Databricks. stopped_reason=time_box.",
-    "dataUpdatedAt": "2026-08-02T09:19:17Z",
+    "notes": "2026-08-03T09:14:22Z strict time-box. 0 applied. 1 blocked: Oowlish Lever Full Stack AI \u2014 form+resume done, CAPTCHA at submit. Queued next: Oowlish DA Product/Customer Analytics Lever + remaining CI&T/GitLab/Databricks found. stopped_reason=time_box.",
+    "dataUpdatedAt": "2026-08-03T09:14:22Z",
     "dashboardNote": "Each job has fetched_at (when first found). Pages reads this JSON after each push.",
-    "addedThisRun": 5
+    "addedThisRun": 1
   },
   "applications": [
     {
@@ -980,9 +980,9 @@
       "url": "https://jobs.lever.co/oowlish/4c8734c5-469f-4eb8-bd31-8c983030dd00",
       "source": "Lever",
       "yoe_max": 3,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "2026-08-02T09:19:17Z still queued next run (Lever AI-Driven Full Stack). Sibling Oowlish Python/React applied successfully this run \u2014 try this next if time allows; CAPTCHA possible.",
+      "notes": "2026-08-03T09:14:22Z cloud run: Lever form fully filled + resume PDF uploaded/parsed (Guatemala LATAM loc; screening Qs answered; Power BI/FS profile). Submit blocked by repeated image CAPTCHA after ~6 min; no confirmation page. stopped_reason=time_box.",
       "discovered_at": "2026-08-01T09:13:30Z",
       "fetched_at": "2026-08-01T09:13:30Z"
     },
@@ -1083,6 +1083,20 @@
       "notes": "2026-08-02T09:19:17Z queued from Databricks Greenhouse (Fullstack, Amsterdam). Expect GH email-verify wall.",
       "discovered_at": "2026-08-02T09:19:17Z",
       "fetched_at": "2026-08-02T09:19:17Z"
+    },
+    {
+      "id": "oowlish-da-product-customer-lever",
+      "title": "Data Analyst (Product & Customer Analytics)",
+      "company": "Oowlish Technology",
+      "location": "Bras\u00edlia, Brazil (Remote)",
+      "url": "https://jobs.lever.co/oowlish/4d812d70-6ae0-4640-b6e9-98c7cc9c4080",
+      "source": "Lever",
+      "yoe_max": 3,
+      "status": "found",
+      "applied_at": null,
+      "notes": "2026-08-03T09:14:22Z queued from Oowlish Lever board for next run (Product & Customer Analytics, Remote). Prefer over Greenhouse email-verify.",
+      "discovered_at": "2026-08-03T09:14:22Z",
+      "fetched_at": "2026-08-03T09:14:22Z"
     }
   ]
 }
