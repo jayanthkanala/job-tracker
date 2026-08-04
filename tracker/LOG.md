@@ -107,3 +107,11 @@ Append-only human-readable summary of each automation run.
 - **stopped_reason:** time_box
 - **dataUpdatedAt:** 2026-08-02T09:19:17Z
 - **Profile used:** jkanala0@gmail.com · resume PDF + https://jayanthkanala.github.io · Microsoft Power BI
+
+---
+
+## 2026-08-04T09:22:10Z — time-boxed cloud apply (cron)
+
+- **Applied:** 1 — CI&T Mid-Level Analytics Engineer (Lisboa) via Lever (`/thanks` confirmation)
+- **Blocked this run:** 1 (CI&T Junior Data Governance Analyst — Lever 404/closed; no attempt)
+- **Still found:** 7 (CI&T DBT; Oowlish AI; GitLab/Databricks GH; requeued Oowlish DA + CI&T Mid DA/BI Brazil + CI&T Full Stack Job-30820)
