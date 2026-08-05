@@ -18,20 +18,20 @@
     "availability": "Remote / Hybrid"
   },
   "meta": {
-    "lastRunAt": "2026-08-02T09:19:17Z",
+    "lastRunAt": "2026-08-05T09:13:01Z",
     "targetBatchSize": 50,
     "runType": "time-boxed-cloud-apply",
-    "found": 6,
+    "found": 5,
     "applied": 1,
-    "blocked": 68,
+    "blocked": 69,
     "attemptedThisRun": 2,
     "blockedThisRun": 2,
-    "appliedThisRun": 1,
+    "appliedThisRun": 0,
     "stopped_reason": "time_box",
-    "notes": "2026-08-02T09:19:17Z strict time-box. 1 applied (Oowlish Lever Full Stack Python/React \u2014 thanks page). Blocked: GitLab GH Intermediate Fullstack Data Products email-verify after full fill; Fivetran Senior Marketing Insights burned (senior title / YOE filter). Still found: Oowlish AI Lever + 5 new CI&T/GitLab/Databricks. stopped_reason=time_box.",
-    "dataUpdatedAt": "2026-08-02T09:19:17Z",
+    "notes": "2026-08-05T09:13:01Z strict time-box. Applied: 0 (no invented successes). Blocked this run: 2 \u2014 Oowlish DA Lever CAPTCHA after full fill+resume; CI&T Junior Data Governance Lever 404. Still found: oowlish-fullstack-ai-lever, ciandt-mid-analytics-engineer-lever, ciandt-analytics-engineer-dbt-lever, gitlab-intermediate-backend-analytics-gh, databricks-fullstack-amsterdam-gh. GH GitLab/Databricks left found (email-verify walls; not opened). stopped_reason=time_box.",
+    "dataUpdatedAt": "2026-08-05T09:13:01Z",
     "dashboardNote": "Each job has fetched_at (when first found). Pages reads this JSON after each push.",
-    "addedThisRun": 5
+    "addedThisRun": 0
   },
   "applications": [
     {
@@ -856,7 +856,7 @@
       "yoe_max": 3,
       "status": "blocked",
       "applied_at": null,
-      "notes": "2026-07-30T09:18:52Z cloud run: Lever form filled + resume uploaded/parsed; blocked on CAPTCHA at submit (~20-30s rule).",
+      "notes": "2026-08-05T09:13:01Z cloud run: Lever form fully filled + resume PDF uploaded/parsed (portfolio https://jayanthkanala.github.io, Power BI/BI tools highlighted); SUBMIT blocked by multi-round image CAPTCHA (>30s). No thanks page.",
       "discovered_at": "2026-07-30T09:18:52Z",
       "fetched_at": "2026-07-30T09:18:52Z"
     },
@@ -1022,9 +1022,9 @@
       "url": "https://jobs.lever.co/ciandt/40b98c49-6705-441e-9feb-7b3cfa20f177",
       "source": "Lever",
       "yoe_max": 2,
-      "status": "found",
+      "status": "blocked",
       "applied_at": null,
-      "notes": "2026-08-02T09:19:17Z queued from CI&T Lever board (Job-30848 Junior Data Governance Analyst, Brazil).",
+      "notes": "2026-08-05T09:13:01Z cloud run: Lever URL returned HTTP 404 Not Found \u2014 posting closed/removed. Burned without form fill.",
       "discovered_at": "2026-08-02T09:19:17Z",
       "fetched_at": "2026-08-02T09:19:17Z"
     },

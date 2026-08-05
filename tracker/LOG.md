@@ -107,3 +107,18 @@ Append-only human-readable summary of each automation run.
 - **stopped_reason:** time_box
 - **dataUpdatedAt:** 2026-08-02T09:19:17Z
 - **Profile used:** jkanala0@gmail.com · resume PDF + https://jayanthkanala.github.io · Microsoft Power BI
+
+---
+
+## 2026-08-05T09:13:01Z — time-boxed cloud apply (cron)
+
+- **Applied:** 0 (none completed; no invented successes)
+- **Blocked this run:** 2 (Oowlish DA Lever CAPTCHA after full form+resume; CI&T Junior Data Governance Lever 404)
+- **Still found:** 5 — oowlish-fullstack-ai-lever, ciandt-mid-analytics-engineer-lever, ciandt-analytics-engineer-dbt-lever, gitlab-intermediate-backend-analytics-gh, databricks-fullstack-amsterdam-gh
+- **Attempted:** Oowlish Data Analyst Lever (form filled, resume uploaded; multi-round CAPTCHA blocked submit)
+- **Probes:** CI&T Junior Data Governance → 404 closed; Mid Analytics / DBT / Oowlish AI / CI&T DA-BI / Full Stack still HTTP 200
+- **Skipped (time_box):** Greenhouse GitLab/Databricks (known email-verify walls); no LinkedIn attempts
+- **stopped_reason:** time_box
+- **dataUpdatedAt:** 2026-08-05T09:13:01Z
+- **Profile used:** jkanala0@gmail.com · resume PDF + https://jayanthkanala.github.io · Microsoft Power BI
+
